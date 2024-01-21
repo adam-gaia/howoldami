@@ -13,5 +13,6 @@ This was a learning project focused on
 - [ ] Implementing CI/CD for a rust project
 - [ ] Write and host docs with `mdbook`
 - [ ] Package for different distros
-- [ ] cargo-dist
+- [ ] [cargo-dist](https://github.com/axodotdev/cargo-dist)
 - [ ] [oranda](https://opensource.axo.dev/oranda/)
+- [ ] [renovate](https://github.com/renovatebot/renovate)
