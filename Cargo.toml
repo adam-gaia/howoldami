@@ -2,6 +2,10 @@
 name = "howoldami"
 version = "0.1.0"
 edition = "2021"
+description = "Calculate how old you are"
+readme = "README.md"
+repository = "https://github.com/adam-gaia/howoldami"
+homepage = "https://adam-gaia.github.io/howoldami"
 
 
 [dependencies]
@@ -14,3 +18,21 @@ toml = "0.8.8"
 
 [dev-dependencies]
 pretty_assertions = "1.4.0"
+
+# The profile that 'cargo dist' will build with
+[profile.dist]
+inherits = "release"
+lto = "thin"
+
+# Config for 'cargo dist'
+[workspace.metadata.dist]
+# The preferred cargo-dist version to use in CI (Cargo.toml SemVer syntax)
+cargo-dist-version = "0.5.0"
+# CI backends to support
+ci = ["github"]
+# The installers to generate for each app
+installers = ["shell", "homebrew"]
+# Target platforms to build apps for (Rust target-triple syntax)
+targets = ["x86_64-unknown-linux-gnu", "aarch64-apple-darwin", "x86_64-apple-darwin", "x86_64-unknown-linux-musl", "x86_64-pc-windows-msvc"]
+# Publish jobs to run in CI
+pr-run-mode = "plan"
