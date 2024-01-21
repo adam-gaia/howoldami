@@ -1,5 +1,8 @@
 {
   "build": {
     "path_prefix": "howoldami"
+  },
+  "styles": {
+    "theme": "light"
   }
 }
