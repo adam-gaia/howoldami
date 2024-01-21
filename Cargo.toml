@@ -4,6 +4,7 @@ version = "0.1.0"
 edition = "2021"
 description = "Calculate how old you are"
 readme = "README.md"
+license = "MIT OR Apache-2.0"
 repository = "https://github.com/adam-gaia/howoldami"
 homepage = "https://adam-gaia.github.io/howoldami"
 
