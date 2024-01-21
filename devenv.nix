@@ -17,6 +17,7 @@
     bacon
     statix
     oranda
+    cargo-dist
     (treefmt-nix.lib.mkWrapper pkgs (import ./treefmt.nix))
   ];
 }
