@@ -16,6 +16,7 @@
     just
     bacon
     statix
+    oranda
     (treefmt-nix.lib.mkWrapper pkgs (import ./treefmt.nix))
   ];
 }
